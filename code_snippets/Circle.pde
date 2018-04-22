@@ -1,0 +1,27 @@
+/**Nodo de forma circular.*/
+
+class Circle extends Node {
+
+  Circle (PVector pos, Float s) {
+    super(pos, s);
+  }
+  
+  @Override
+    void display() {
+    pushStyle();
+    strokeWeight(5);
+    stroke(250, 0, 0);
+    fill(0, 255, 0);
+    if (pick(mouseX, mouseY)) {
+      stroke(0, 255, 0);
+      fill(255, 0, 255);
+    }
+    ellipse(position.x, position.y, size, size);
+    popStyle();
+  }
+
+  @Override
+    boolean pick(int x, int y) {
+    return sqrt(sq(x-position().x) + sq(y-position().y)) <= size()/2;
+  }
+}
