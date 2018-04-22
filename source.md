@@ -72,7 +72,7 @@ V:
 ## Comparación
 
 <figure>
-    <img height='400' src='fig/multiple_inheritance.jpg' />
+    <img height='400' src='Presentacion/A. Estático.png' />
     <figcaption>Multiple inheritance</figcaption>
 </figure>
 
@@ -81,7 +81,7 @@ V:
 ## Comparación
 
 <figure>
-    <img height='400' src='fig/multilevel_inheritance.jpg' />
+    <img height='400' src='Presentacion/A. Dinámico.png' />
     <figcaption>Multilevel inheritance</figcaption>
 </figure>
 
