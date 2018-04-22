@@ -37,10 +37,10 @@ H:
 
 ## Introducción
 
-We already know:
+Ya sabemos que:
 
-<li class="fragment"> An object is a _data structure_ for storing user-defined _attributes_ (which may be other objects even of the same type), and _methods_ to manipulate them
-<li class="fragment"> To use an object: Declare & initialize it and then call functions on it
+<li class="fragment"> Un objeto es una _estructura de datos_para almacenar _atributos_ dados por el usuario, además del uso de _métodos_ para manipularlos
+<li class="fragment"> Un arreglo es una _lista de datos_para almacenar _cualquier_ tipo de datos dentro de ella
 
 H:
 
