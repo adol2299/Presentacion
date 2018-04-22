@@ -45,9 +45,9 @@ Ya sabemos que:
 H:
 
 ## Descripción
-What is?
+¿Qué es?
 
-> Is when an object or class B is based on another object or class A
+> Un ArrayList es un _array_ que almacena _objetos_ de manera dinámica
 
 V:
 
