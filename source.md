@@ -21,43 +21,37 @@ H:
 
 # ArrayList
 
-by some [National University of Colombia collaborators](https://github.com/orgs/objetos/people)
+por Daniel Torres y Andrés Ortega
 
 H:
 
 # Index
 
  1. Introducción <!-- .element: class="fragment" data-fragment-index="1"-->
- 1. Inheritance <!-- .element: class="fragment" data-fragment-index="2"-->
- 1. Polymorphism <!-- .element: class="fragment" data-fragment-index="3"-->
+ 1. Descripción <!-- .element: class="fragment" data-fragment-index="2"-->
+ 1. ArrayList <!-- .element: class="fragment" data-fragment-index="3"-->
+ 1. Clases Ayudantes <!-- .element: class="fragment" data-fragment-index="4"-->
+ 1. Implementación <!-- .element: class="fragment" data-fragment-index="5"-->
  
 H:
 
-## Introduction
+## Introducción
 
 We already know:
 
 <li class="fragment"> An object is a _data structure_ for storing user-defined _attributes_ (which may be other objects even of the same type), and _methods_ to manipulate them
 <li class="fragment"> To use an object: Declare & initialize it and then call functions on it
 
-V:
-
-## Introduction
-
-We may ask now for ways to relate objects different than [composition](https://en.wikipedia.org/wiki/Object_composition)
-
-> That's where Inheritance & Polymorphism comes into the picture
-
 H:
 
-## Inheritance
+## Descripción
 What is?
 
 > Is when an object or class B is based on another object or class A
 
 V:
 
-## Inheritance
+## Descripción
 We say:
 
 <li class="fragment"> B is _sublass_ of A
@@ -66,7 +60,7 @@ We say:
 
 V:
 
-## Inheritance
+## Descripción
 
 <figure>
     <img height='400' src='fig/single_inheritance.jpg' />
@@ -75,7 +69,7 @@ V:
 
 V:
 
-## Inheritance
+## Descripción
 
 <figure>
     <img height='400' src='fig/multiple_inheritance.jpg' />
@@ -84,7 +78,7 @@ V:
 
 V:
 
-## Inheritance
+## Descripción
 
 <figure>
     <img height='400' src='fig/multilevel_inheritance.jpg' />
@@ -93,7 +87,7 @@ V:
 
 V:
 
-## Inheritance
+## Descripción
 Advantages
 
 <li class="fragment"> It is a mechanism for code reuse
@@ -101,139 +95,20 @@ Advantages
 
 V:
 
-## Inheritance
+## Descripción
 Example:
 
 > Consider the problem of visually representing some integer sequences as a tile of squares with different hue values
 
 V:
 
-## Inheritance
+## Descripción
 Example
 
 We are going to declare a _superclass_ *Sequence*
 and two _subclasses_ *Fibonacci* and *Padovan*
 
 V:
-
-## Inheritance
-Example
-
-```processing
-// Superclass Sequence
-class Sequence {
-  color hue;
-  int yPos;
-  
-  Sequence() {
-    setHue(120);
-    setHeight(height/2);
-  }
-  
-  void setHeight(int h) {
-    yPos = h;
-  }
-  
-  int height() {
-    return yPos;
-  }
-  
-  void setHue(color h) {
-    hue = h;
-  }
-  
-  color hue() {
-    return hue;
-  }
-}
-```
-
-V:
-
-## Inheritance
-Example
-
-```processing
-// Subclass Fibonacci
-class Fibonacci extends Sequence {
-  int compute(int n) {
-    if (n == 1)
-      return 0;
-    if (n == 2)
-      return 1;
-    if ( n > 2)
-      return compute(n-2) + compute(n-1);
-    return -1;
-  }
-  
-  void display(int terms) {
-    int square_width = width / terms;
-    for (int i = 0; i < terms; i++) {
-      fill(hue, 100, map(compute(i+1), 0, compute(terms), 0, 100));
-      rect(i*square_width, height(), square_width, 50);
-    }
-  }
-}
-```
-
-V:
-
-## Inheritance
-Example
-
-```processing
-// Subclass Padovan
-class Padovan extends Sequence {
-  int compute(int n) {
-    if (n == 1 || n == 2 || n == 3)
-      return 1;
-    if ( n > 3)
-      return compute(n-2) + compute(n-3);
-    return -1;
-  }
-  
-  void display(int terms) {
-    int square_width = width / terms;
-    for (int i = 0; i < terms; i++) {
-      fill(hue, 100, map(compute(i+1), 0, compute(terms), 0, 100));
-      rect(i*square_width, height(), square_width, 50);
-    }
-  }
-}
-```
-
-V:
-
-## Inheritance
-Example
-
-```processing
-// Object declaration
-Fibonacci fSeq;
-Padovan pSeq;
-int term = 12;
-
-void setup() {
-  size(720,640);
-  colorMode(HSB, 360, 100, 100);
-  // Object instantiation
-  fSeq = new Fibonacci();
-  pSeq = new Padovan();
-}
-
-void draw() {
-  background(0);
-  // Object use:
-  fSeq.setHeight(mouseY);
-  fSeq.display(5);
-}
-
-void keyPressed() {
-  // Object use:
-  println(term + " term Fibonacci value is: " + fSeq.compute(term));
-  println(term + " term Padovan value is: " + pSeq.compute(term));
-}
-```
 
 H:
 
