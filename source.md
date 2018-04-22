@@ -51,7 +51,7 @@ What is?
 
 V:
 
-## Descripción
+## Usos
 We say:
 
 <li class="fragment"> B is _sublass_ of A
@@ -60,7 +60,7 @@ We say:
 
 V:
 
-## Descripción
+## Ventajas
 
 <figure>
     <img height='400' src='fig/single_inheritance.jpg' />
@@ -69,7 +69,7 @@ V:
 
 V:
 
-## Descripción
+## Comparación
 
 <figure>
     <img height='400' src='fig/multiple_inheritance.jpg' />
@@ -78,7 +78,7 @@ V:
 
 V:
 
-## Descripción
+## Comparación
 
 <figure>
     <img height='400' src='fig/multilevel_inheritance.jpg' />
@@ -87,7 +87,7 @@ V:
 
 V:
 
-## Descripción
+## Sintaxis
 Advantages
 
 <li class="fragment"> It is a mechanism for code reuse
@@ -95,24 +95,14 @@ Advantages
 
 V:
 
-## Descripción
+## Sintaxis
 Example:
 
 > Consider the problem of visually representing some integer sequences as a tile of squares with different hue values
 
-V:
-
-## Descripción
-Example
-
-We are going to declare a _superclass_ *Sequence*
-and two _subclasses_ *Fibonacci* and *Padovan*
-
-V:
-
 H:
 
-## Polymorphism
+## ArrayList
 What is?
 
 > is the provision of a single interface to entities of different types
@@ -120,16 +110,23 @@ What is?
 
 V:
 
-## Polymorphism
+## Métodos Auxiliares
 Types
 
 1. Ad hoc polymorphism <!-- .element: class="fragment" data-fragment-index="1"-->
 1. Parametric polymorphism <!-- .element: class="fragment" data-fragment-index="2"-->
 1. Subtyping <!-- .element: class="fragment" data-fragment-index="3"-->
 
+## Ejemplo Círculos
+What is?
+
+> is the provision of a single interface to entities of different types
+[Bjarne Stroustrup (February 19, 2007). "Bjarne Stroustrup's C++](http://www.stroustrup.com/glossary.html#Gpolymorphism)
+
+
 H:
 
-## Ad hoc polymorphism
+## Clases Auxiliares 
 
 > when a function denotes different implementations depending on a limited range of individually specified types
 
@@ -137,7 +134,7 @@ Supported in many languages via function overloading <!-- .element: class="fragm
 
 V:
 
-## Function overloading
+## IntList
 Continuing our previous example:
 
 ```processing
@@ -168,7 +165,7 @@ class Padovan extends Sequence {
 
 V:
 
-## Function overloading
+## FloatList
 Continuing our previous example:
 
 ```processing
@@ -200,198 +197,27 @@ void keyPressed() {
 }
 ```
 
+## StringList
+What is?
+
+> is the provision of a single interface to entities of different types
+[Bjarne Stroustrup (February 19, 2007). "Bjarne Stroustrup's C++](http://www.stroustrup.com/glossary.html#Gpolymorphism)
+
 H:
 
-## Parametric polymorphism
+## Implementación en Proyecto
 
 > when code is written without mention of any specific type and thus can
 be used transparently with any number of new types
 
 V:
 
-## Parametric polymorphism
+## Ejemplo Código
 
 Also known as:
 
 * [Generic programming](https://en.wikipedia.org/wiki/Generic_programming) in the OOP community
 * _Polymorphism_ in the functional programming community
-
-H:
-
-## Subtyping
-
-> when a name denotes instances of many different classes related by some common superclass
-
-V:
-
-## Subtyping
-
-Also known as:
-
-* _Polymorphism_ in the OOP community
-
-V:
-
-## Subtyping
-
-Suppose B is a subtype of A (often written as $B <: A$)
-
-We not only say:
-
-<li class="fragment"> B is _sublass_ of A
-<li class="fragment"> A is _superclass_ of B
-<li class="fragment"> A and B form a _class hierarchy_
-
-
-V:
-
-## Subtyping
-
-but also:
-
-any term of type B can be _safely used_ in a context where a term of type A is expected
-
-V:
-
-## Subtyping
-
-Advantages:
-
-<li class="fragment"> It encourages _data abstraction_
-<li class="fragment"> It allows _code simplicity_
-
-V:
-
-## Subtyping
-
-Continuing our previous example:
-
-```processing
-// Superclass Sequence
-abstract class Sequence { 
-  abstract int compute(int n);
-  
-  color hue;
-  int yPos;
-  
-  Sequence() {
-    setHue(120);
-    setHeight(height/2);
-  }
-  
-  void setHeight(int h) {
-    yPos = h;
-  }
-  
-  int height() {
-    return yPos;
-  }
-  
-  void setHue(color h) {
-    hue = h;
-  }
-  
-  color hue() {
-    return hue;
-  }
-  
-  // this function is common among different
-  // Sequence subtypes, so we moved it here
-  void display(int terms) {
-    int square_width = width / terms;
-    for (int i = 0; i < terms; i++) {
-      fill(hue, 100, map(compute(i+1), 0, compute(terms), 0, 100));
-      rect(i*square_width, height(), square_width, 50);
-    }
-  }
-  
-  // Method overloading
-  void display() {
-    display(5);
-  }
-}
-```
-
-V:
-
-## Subtyping
-Continuing our previous example:
-
-```processing
-// Subclass Fibonacci
-class Fibonacci extends Sequence {
-  Fibonacci() {
-    setHue(0);
-  }
-  
-  @Override
-  int compute(int n) {
-    if (n == 1)
-      return 0;
-    if (n == 2)
-      return 1;
-    if ( n > 2)
-      return compute(n-2) + compute(n-1);
-    return -1;
-  }  
-}
-```
-
-V:
-
-## Subtyping
-Continuing our previous example:
-
-```processing
-// Subclass Padovan
-class Padovan extends Sequence {
-  Padovan() {
-    setHue(180);
-  }
-  
-  @Override
-  int compute(int n) {
-    if (n == 1 || n == 2 || n == 3)
-      return 1;
-    if ( n > 3)
-      return compute(n-2) + compute(n-3);
-    return -1;
-  }
-}
-```
-
-V:
-
-## Subtyping
-Continuing our previous example:
-
-```processing
-// Object declaration
-Sequence sequence;
-boolean padovan; // false by default, so we begin with Fibonacci
-
-void setup() {
-  size(720,640);
-  colorMode(HSB, 360, 100, 100);
-  // We cannot initialize an 'abstract object'
-  // only 'concrete' ones:
-  sequence = new Fibonacci();
-}
-
-void draw() {
-  background(0);
-  // Object use:
-  sequence.setHeight(mouseY);
-  sequence.display();
-}
-
-void keyPressed() {
-  padovan = !padovan;
-  // both Fibonacci and Padovan object instances
-  // may be assigned to the superclass sequence object:
-  sequence = padovan ? new Padovan() : new Fibonacci();
-}
-```
 
 H:
 
