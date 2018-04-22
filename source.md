@@ -19,7 +19,7 @@
 
 H:
 
-# Polymorphism
+# ArrayList
 
 by some [National University of Colombia collaborators](https://github.com/orgs/objetos/people)
 
@@ -27,7 +27,7 @@ H:
 
 # Index
 
- 1. Introduction <!-- .element: class="fragment" data-fragment-index="1"-->
+ 1. Introducción <!-- .element: class="fragment" data-fragment-index="1"-->
  1. Inheritance <!-- .element: class="fragment" data-fragment-index="2"-->
  1. Polymorphism <!-- .element: class="fragment" data-fragment-index="3"-->
  
