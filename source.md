@@ -25,7 +25,7 @@ por Daniel Torres y Andrés Ortega
 
 H:
 
-# Index
+# Índice
 
  1. Introducción <!-- .element: class="fragment" data-fragment-index="1"-->
  1. Descripción <!-- .element: class="fragment" data-fragment-index="2"-->
