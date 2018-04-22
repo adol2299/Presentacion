@@ -73,7 +73,7 @@ V:
 
 <figure>
     <img height='400' src='fig/A. Estático.png' />
-    <figcaption>Multiple inheritance</figcaption>
+    <figcaption>Arreglo Estático</figcaption>
 </figure>
 
 V:
@@ -81,8 +81,8 @@ V:
 ## Comparación
 
 <figure>
-    <img height='400' src="fig/A. Dinámico.png' />
-    <figcaption>Multilevel inheritance</figcaption>
+    <img height='400' src='fig/A. Dinámico.png' />
+    <figcaption>Arreglo Dinámico</figcaption>
 </figure>
 
 V:
