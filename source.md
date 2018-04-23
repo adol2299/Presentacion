@@ -56,7 +56,7 @@ V:
 ## Descripción
 <figure>
     <img height='400' src='fig/Esquema clases ArrayList.png' />
-    <figcaption>Arreglo Estático</figcaption>
+    <figcaption>Esquema clases ArrayList</figcaption>
 </figure>
 
 V:
@@ -220,7 +220,7 @@ H:
 > Los Objetos del ArrayList pueden ser a su vez otros ArrayList
 
 <figure>
-    <img height='400' src='fig/ Esquema ArrayBidim.png' />
+    <img height='400' src='fig/Esquema ArrayBidim.png' />
     <figcaption>Esquema ArrayBidim</figcaption>
 </figure>
 
