@@ -139,74 +139,79 @@ Estas clases proveen una experiencia similar a los Arrays <!-- .element: class="
 V:
 
 ## IntList
-Continuing our previous example:
+Función auxiliar para una lista de Int:
 
 ```processing
-// Subclass Padovan
-class Padovan extends Sequence {
-  int compute(int n) {
-    if (n == 1 || n == 2 || n == 3)
-      return 1;
-    if ( n > 3)
-      return compute(n-2) + compute(n-3);
-    return -1;
-  }
-  
-  void display(int terms) {
-    int square_width = width / terms;
-    for (int i = 0; i < terms; i++) {
-      fill(hue, 100, map(compute(i+1), 0, compute(terms), 0, 100));
-      rect(i*square_width, height(), square_width, 50);
-    }
-  }
-  
-  // Method overloading
-  void display() {
-    display(5);
-  }
+IntList inventory;
+
+void setup() {
+  size(200, 200);
+  inventory = new IntList();
+  inventory.append(84);
+  inventory.append(15);
+  inventory.append(102);
+  println(inventory);
+  noLoop();
+  fill(0);
+  textAlign(CENTER);
+}
+
+void draw() {
+  int nums = inventory.get(2);
+  text(nums, width/2, height/2);
 }
 ```
 
 V:
 
 ## FloatList
-Continuing our previous example:
+Función auxiliar para una lista de Float:
 
 ```processing
-// Object declaration
-Fibonacci fSeq;
-Padovan pSeq;
-int term = 12;
+FloatList inventory;
 
 void setup() {
-  size(720,640);
-  colorMode(HSB, 360, 100, 100);
-  // Object instantiation
-  fSeq = new Fibonacci();
-  pSeq = new Padovan();
+  size(200, 200);
+  inventory = new FloatList();
+  inventory.append(108.6);
+  inventory.append(5.8);
+  inventory.append(8.2);
+  println(inventory);
+  noLoop();
+  fill(0);
+  textAlign(CENTER);
 }
 
 void draw() {
-  background(0);
-  // Object use:
-  pSeq.setHeight(mouseY);
-  // Call to the overloaded method
-  pSeq.display();
-}
-
-void keyPressed() {
-  // Object use:
-  println(term + " term Fibonacci value is: " + fSeq.compute(term));
-  println(term + " term Padovan value is: " + pSeq.compute(term));
+  float nums = inventory.get(2);
+  text(nums, width/2, height/2);
 }
 ```
 V:
 
 ## StringList
-What is?
+Función auxiliar para una lista de String:
 
-> is the provision of a single interface to entities of different types
-[Bjarne Stroustrup (February 19, 2007). "Bjarne Stroustrup's C++](http://www.stroustrup.com/glossary.html#Gpolymorphism)
+```processing
+StringList inventory;
+
+void setup() {
+  size(200, 200);
+  inventory = new StringList();
+  inventory.append("coffee");
+  inventory.append("flour");
+  inventory.append("tea");
+  println(inventory);
+  noLoop();
+  fill(0);
+  textAlign(CENTER);
+}
+
+void draw() {
+  String item = inventory.get(2);
+  text(item, width/2, height/2);
+}
+```
 
 H:
 
