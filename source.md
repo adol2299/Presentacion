@@ -30,7 +30,7 @@ H:
  1. Descripción <!-- .element: class="fragment" data-fragment-index="2"-->
  1. ArrayList <!-- .element: class="fragment" data-fragment-index="3"-->
  1. Listas Ayudantes <!-- .element: class="fragment" data-fragment-index="4"-->
- 1. Listas Ayudantes <!-- .element: class="fragment" data-fragment-index="5"-->
+ 1. Array Bidimensional <!-- .element: class="fragment" data-fragment-index="5"-->
  1. Implementación <!-- .element: class="fragment" data-fragment-index="5"-->
  
 H:
@@ -114,6 +114,7 @@ Array.clear();
 Lista de métodos en el _API_ de java.
 Processing - _reference_. 
 ```
+H:
 
 ## Ejemplo Círculos
 >> Animación 
