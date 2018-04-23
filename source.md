@@ -40,7 +40,7 @@ H:
 Ya sabemos que:
 
 <li class="fragment"> Un objeto es una _estructura de datos_ para almacenar _atributos_ previamente definidos.
-<li class="fragment"> Los objetos se manipulan por medio de metodos.
+<li class="fragment"> Los objetos se manipulan por medio de métodos.
 <li class="fragment"> Un arreglo es un _conjunto o grupo_ de datos de algún tipo organizados de manera consecutiva dentro de el.
 
 H:
@@ -48,8 +48,8 @@ H:
 ## Descripción
 ¿Qué es?
 
-> Un ArrayList es una clase perteneciente al _api_ de Java.
-> Almacena _objetos_ en sus espacios de memoria y posee una serie de métodos que permiten controlar y buscar sus contenidos.
+> Un ArrayList es una clase perteneciente al _Api_ de Java.
+>  Almacena _objetos_ en sus espacios de memoria y posee una serie de métodos que permiten controlar y buscar sus contenidos.
 
 V:
 
