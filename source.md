@@ -30,6 +30,7 @@ H:
  1. Descripción <!-- .element: class="fragment" data-fragment-index="2"-->
  1. ArrayList <!-- .element: class="fragment" data-fragment-index="3"-->
  1. Listas Ayudantes <!-- .element: class="fragment" data-fragment-index="4"-->
+ 1. Listas Ayudantes <!-- .element: class="fragment" data-fragment-index="5"-->
  1. Implementación <!-- .element: class="fragment" data-fragment-index="5"-->
  
 H:
@@ -97,6 +98,7 @@ particles = new ArrayList <Particle> ();
 type[] nombre = new type[tamaño];
 type[] nombre = { Position 0, Position 1, Position 2 };
 ```
+V:
 
 ## Métodos 
 
@@ -234,19 +236,7 @@ V:
 
 H:
  
-## Implementación en Proyecto (Ciclos Eulerianos)
-
-> when code is written without mention of any specific type and thus can
-be used transparently with any number of new types
-
-V:
-
-## Ejemplo Código
-
-Also known as:
-
-* [Generic programming](https://en.wikipedia.org/wiki/Generic_programming) in the OOP community
-* _Polymorphism_ in the functional programming community
+# Implementación en Proyecto (Ciclos Eulerianos)
 
 H:
 
