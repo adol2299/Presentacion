@@ -60,20 +60,11 @@ V:
 
 V:
 
-## Usos
-We say:
-
-<li class="fragment"> B is _sublass_ of A
-<li class="fragment"> A is _superclass_ of B
-<li class="fragment"> A and B form a _class hierarchy_
-
-V:
-
 ## Ventajas
 
-<li class="fragment"> Al poseer un tamaño dinámico tiene un uso más sencillo
-<li class="fragment"> Representa una manera de organizada de almacenar objetos
-<li class="fragment"> Posee cantidad de métodos para su implementación y modificación
+<li class="fragment"> Al poseer una estructura dinámica posee un uso más amplio sencillo.
+<li class="fragment"> Representa una manera de organizada de almacenar objetos.
+<li class="fragment"> Posee una gran variedad de métodos para su implementación y modificación.
 	<
 
 V:
@@ -100,12 +91,12 @@ V:
 Declaración
 ``` processing
 
-ArrayList<Type>()
-ArrayList<Type>(initialCapacity)
-
+ArrayList <Particle> particles;
+particles = new ArrayList <Particle> ();
+	
+type[] nombre = new type[tamaño];
+type[] nombre = { Position 0, Position 1, Position 2 };
 ```
-
-
 
 V:
 
