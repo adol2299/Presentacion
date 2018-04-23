@@ -217,11 +217,22 @@ H:
 > Los Objetos del ArrayList pueden ser a su vez otros ArrayList
 
 <figure>
-    <img height='400' src='fig/A. Esquema Matriz.png' />
+    <img height='400' src='fig/ Esquema Matriz.png' />
     <figcaption>Arreglo Dinámico</figcaption>
 </figure>
 
 V:
+
+## Array Bidimensional:
+
+> Los Objetos del ArrayList pueden ser a su vez otros ArrayList
+
+```processing
+ ArrayList<ArrayList<Integer>> array = new ArrayList();
+ array.add(new ArrayList<Integer>());
+```
+
+H:
  
 ## Implementación en Proyecto (Ciclos Eulerianos)
 
@@ -245,6 +256,7 @@ H:
 * [IntList - Processing](https://processing.org/reference/IntList.html)
 * [FloatList - Processing](https://processing.org/reference/FloatList.html)
 * [StringList - Processing](https://processing.org/reference/StringList.html)
+* [ArrayList Bidimensional - Java](http://puntocomnoesunlenguaje.blogspot.com.co/2012/12/arraylist-en-java.html)
 
 V:
 
@@ -255,7 +267,3 @@ V:
 
 H:
 
-## Workshop
-
-> Implement a hierarchical design for your [tangram](https://en.wikipedia.org/wiki/Tangram),
-taking into account different visual representations along it
