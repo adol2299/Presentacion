@@ -30,7 +30,7 @@ H:
  1. Introducción <!-- .element: class="fragment" data-fragment-index="1"-->
  1. Descripción <!-- .element: class="fragment" data-fragment-index="2"-->
  1. ArrayList <!-- .element: class="fragment" data-fragment-index="3"-->
- 1. Listas Ayudantes <!-- .element: class="fragment" data-fragment-index="4"-->
+ 1. Clases Ayudantes <!-- .element: class="fragment" data-fragment-index="4"-->
  1. Implementación <!-- .element: class="fragment" data-fragment-index="5"-->
  
 H:
@@ -48,16 +48,8 @@ H:
 ## Descripción
 ¿Qué es?
 
-> Un ArrayList es una clase perteneciente al _api_ de Java.
-> Almacena _objetos_ en sus espacios de memoria y posee una serie de métodos que permiten controlar y buscar sus contenidos.
+> Un ArrayList es un _array_ que almacena _objetos_ de manera dinámica
 
-V:
-
-## Descripción
-¿Qué es?
-
-> Un ArrayList es una clase perteneciente al _api_ de Java.
-> Almacena _objetos_ en sus espacios de memoria y posee una serie de métodos que permiten controlar y buscar sus contenidos.
 V:
 
 ## Usos
@@ -240,19 +232,19 @@ Also known as:
 
 H:
 
-## References
+## Referencias
 
-* [Inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)
-* [Bjarne Stroustrup (February 19, 2007). "Bjarne Stroustrup's C++](http://www.stroustrup.com/glossary.html#Gpolymorphism)
-* [Polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
-* [Subtyping](https://en.wikipedia.org/wiki/Subtyping)
+* [ArrayList](https://processing.org/reference/ArrayList.html)
+* [IntList](https://processing.org/reference/IntList.html)
+* [FloatList](https://processing.org/reference/FloatList.html)
+* [StringList](https://processing.org/reference/StringList.html)
 
 V:
 
-## Further reading:
+##  Lecturas Auxiliares
 
-* [Is-a relationship](https://en.wikipedia.org/wiki/Is-a)
-* [Java Interfaces](https://en.wikipedia.org/wiki/Interface_(Java)
+* [ArrayList Example](https://processing.org/examples/arraylistclass.html)
+* [ArrayLists in Processing - The Nature of Code](https://www.youtube.com/watch?v=HnSJZ4qTcwY)
 
 H:
 
