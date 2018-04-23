@@ -18,7 +18,6 @@
 </section>
 
 H:
-
 # ArrayList
 
 por Daniel Torres y Andrés Ortega
@@ -30,7 +29,7 @@ H:
  1. Introducción <!-- .element: class="fragment" data-fragment-index="1"-->
  1. Descripción <!-- .element: class="fragment" data-fragment-index="2"-->
  1. ArrayList <!-- .element: class="fragment" data-fragment-index="3"-->
- 1. Clases Ayudantes <!-- .element: class="fragment" data-fragment-index="4"-->
+ 1. Listas Ayudantes <!-- .element: class="fragment" data-fragment-index="4"-->
  1. Implementación <!-- .element: class="fragment" data-fragment-index="5"-->
  
 H:
@@ -48,8 +47,16 @@ H:
 ## Descripción
 ¿Qué es?
 
-> Un ArrayList es un _array_ que almacena _objetos_ de manera dinámica
+> Un ArrayList es una clase perteneciente al _api_ de Java.
+> Almacena _objetos_ en sus espacios de memoria y posee una serie de métodos que permiten controlar y buscar sus contenidos.
 
+V:
+
+## Descripción
+¿Qué es?
+
+> Un ArrayList es una clase perteneciente al _api_ de Java.
+> Almacena _objetos_ en sus espacios de memoria y posee una serie de métodos que permiten controlar y buscar sus contenidos.
 V:
 
 ## Usos
