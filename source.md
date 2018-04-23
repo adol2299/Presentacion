@@ -66,7 +66,7 @@ V:
 <li class="fragment"> Al poseer una estructura dinámica posee un uso más amplio sencillo.
 <li class="fragment"> Representa una manera de organizada de almacenar objetos.
 <li class="fragment"> Posee una gran variedad de métodos para su implementación y modificación.
-	<
+	
 
 V:
 
