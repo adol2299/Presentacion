@@ -53,6 +53,13 @@ H:
 
 V:
 
+## Descripción
+¿Qué es?
+
+> Un ArrayList es una clase perteneciente al _api_ de Java.
+> Almacena _objetos_ en sus espacios de memoria y posee una serie de métodos que permiten controlar y buscar sus contenidos.
+V:
+
 ## Usos
 We say:
 
