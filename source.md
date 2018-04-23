@@ -119,8 +119,8 @@ H:
 ## Ejemplo Círculos
 >> Animación 
 <figure>
-    <img height='400' src='fig/A. Dinámico.png' />
-    <figcaption>Arreglo Dinámico</figcaption>
+    <img height='400' src='fig/Circulos.png' />
+    <figcaption> Circulos </figcaption>
 </figure>
 
 H:
@@ -221,7 +221,7 @@ H:
 
 <figure>
     <img height='400' src='fig/ Esquema ArrayBidim.png' />
-    <figcaption>Arreglo Dinámico</figcaption>
+    <figcaption>Esquema Array Bidim</figcaption>
 </figure>
 
 V:
