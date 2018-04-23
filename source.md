@@ -216,8 +216,10 @@ H:
 
 > Los Objetos del ArrayList pueden ser a su vez otros ArrayList
 
-
-
+<figure>
+    <img height='400' src='fig/A. Esquema Matriz.png' />
+    <figcaption>Arreglo Dinámico</figcaption>
+</figure>
 
 V:
  
