@@ -234,16 +234,16 @@ H:
 
 ## Referencias
 
-* [ArrayList](https://processing.org/reference/ArrayList.html)
-* [IntList](https://processing.org/reference/IntList.html)
-* [FloatList](https://processing.org/reference/FloatList.html)
-* [StringList](https://processing.org/reference/StringList.html)
+* [ArrayList - Processing](https://processing.org/reference/ArrayList.html)
+* [IntList - Processing](https://processing.org/reference/IntList.html)
+* [FloatList - Processing](https://processing.org/reference/FloatList.html)
+* [StringList - Processing](https://processing.org/reference/StringList.html)
 
 V:
 
 ##  Lecturas Auxiliares
 
-* [ArrayList Example](https://processing.org/examples/arraylistclass.html)
+* [ArrayList Example - Processing](https://processing.org/examples/arraylistclass.html)
 * [ArrayLists in Processing - The Nature of Code](https://www.youtube.com/watch?v=HnSJZ4qTcwY)
 
 H:
