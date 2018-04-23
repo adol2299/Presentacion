@@ -39,7 +39,7 @@ H:
 
 Ya sabemos que:
 
-<li class="fragment"> Un objeto es una _estructura de datos_ para almacenar _atributos_ dados por el usuario, además del uso de _métodos_ para manipularlos
+<li class="fragment"> Un objeto es una _estructura de datos_ para almacenar _atributos_ dados por el usuario, además del uso de _métodos_ para.
 <li class="fragment"> Un arreglo es una _lista de datos_ para almacenar _cualquier_ tipo de datos dentro de ella
 
 H:
