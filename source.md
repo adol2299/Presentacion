@@ -132,9 +132,9 @@ H:
 
 ## Clases Auxiliares 
 
-> when a function denotes different implementations depending on a limited range of individually specified types
+> Son clase más espcíficas enfocadas a la simplicidad mientras se mantiene cierta funcionalidad de los ArrayList
 
-Supported in many languages via function overloading <!-- .element: class="fragment" data-fragment-index="1"-->
+Estas clases proveen una experiencia similar a los Arrays <!-- .element: class="fragment" data-fragment-index="1"-->
 
 V:
 
