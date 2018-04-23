@@ -98,34 +98,23 @@ type[] nombre = new type[tamaño];
 type[] nombre = { Position 0, Position 1, Position 2 };
 ```
 
-V:
+## Métodos 
 
-## Sintaxis
-<li class="fragment"> Type - Nombre de la clase: tipo de dato para los objetos del ArrayList
-<li class="fragment"> initialCapacity - int: define la capacidad inicial de la lista; por defecto es vacía
+Los mas usados:
+``` processing
 
-H:
+Array.size();
+Array.remove();
+Array.add();
+Array.get();
+Array.clear();
 
-## ArrayList
-What is?
-
-> is the provision of a single interface to entities of different types
-[Bjarne Stroustrup (February 19, 2007). "Bjarne Stroustrup's C++](http://www.stroustrup.com/glossary.html#Gpolymorphism)
-
-V:
-
-## Métodos Auxiliares
-Types
-
-1. Ad hoc polymorphism <!-- .element: class="fragment" data-fragment-index="1"-->
-1. Parametric polymorphism <!-- .element: class="fragment" data-fragment-index="2"-->
-1. Subtyping <!-- .element: class="fragment" data-fragment-index="3"-->
+Lista de métodos en el _API_ de java.
+Processing - _reference_. 
+```
 
 ## Ejemplo Círculos
 What is?
-
-> is the provision of a single interface to entities of different types
-[Bjarne Stroustrup (February 19, 2007). "Bjarne Stroustrup's C++](http://www.stroustrup.com/glossary.html#Gpolymorphism)
 
 
 H:
