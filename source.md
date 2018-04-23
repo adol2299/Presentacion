@@ -62,10 +62,10 @@ V:
 
 ## Ventajas
 
-<figure>
-    <img height='400' src='fig/single_inheritance.jpg' />
-    <figcaption>Single inheritance</figcaption>
-</figure>
+<li class="fragment"> Al poseer un tamaño dinámico tiene un uso más sencillo
+<li class="fragment"> Representa una manera de organizada de almacenar objetos
+<li class="fragment"> Posee cantidad de métodos para su implementación y modificación
+	<
 
 V:
 
@@ -88,17 +88,21 @@ V:
 V:
 
 ## Sintaxis
-Advantages
+Declaración
+``` processing
 
-<li class="fragment"> It is a mechanism for code reuse
-<li class="fragment"> It allows (independent) extensions of the original software via public classes and interfaces
+ArrayList<Type>()
+ArrayList<Type>(initialCapacity)
+
+```
+
+
 
 V:
 
 ## Sintaxis
-Example:
-
-> Consider the problem of visually representing some integer sequences as a tile of squares with different hue values
+<li class="fragment"> Type - Nombre de la clase: tipo de dato para los objetos del ArrayList
+<li class="fragment"> initialCapacity - int: define la capacidad inicial de la lista; por defecto es vacía
 
 H:
 
