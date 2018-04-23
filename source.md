@@ -221,7 +221,7 @@ H:
 
 <figure>
     <img height='400' src='fig/ Esquema ArrayBidim.png' />
-    <figcaption>Esquema Array Bidim</figcaption>
+    <figcaption>Esquema ArrayBidim</figcaption>
 </figure>
 
 V:
