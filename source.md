@@ -104,9 +104,9 @@ Los mas usados:
 ``` processing
 
 Array.size();
-Array.remove();
-Array.add();
-Array.get();
+Array.remove(index);
+Array.add(index, amount);
+Array.get(index);
 Array.clear();
 
 Lista de métodos en el _API_ de java.
@@ -114,14 +114,22 @@ Processing - _reference_.
 ```
 
 ## Ejemplo Círculos
-What is?
-
+>> Animación 
+<figure>
+    <img height='400' src='fig/A. Dinámico.png' />
+    <figcaption>Arreglo Dinámico</figcaption>
+</figure>
 
 H:
 
 ## Clases Auxiliares 
 
-> Son clase más espcíficas enfocadas a la simplicidad mientras se mantiene cierta funcionalidad de los ArrayList
+> Son listas más espcíficas enfocadas a la simplicidad.
+> Se mantiene gran parte de la funcionalidad de los ArrayList.
+
+>>IntList
+>>FloatList
+>>StringList
 
 Estas clases proveen una experiencia similar a los Arrays <!-- .element: class="fragment" data-fragment-index="1"-->
 
@@ -204,7 +212,19 @@ void draw() {
 
 H:
 
-## Implementación en Proyecto
+## Array Bidimensional:
+
+> Los Objetos del ArrayList pueden ser a su vez otros ArrayList
+
+<figure>
+    <img height='400' src='fig/A. Esquema Matriz.png' />
+    <figcaption>Arreglo Dinámico</figcaption>
+</figure>
+
+
+V:
+ 
+## Implementación en Proyecto (Ciclos Eulerianos)
 
 > when code is written without mention of any specific type and thus can
 be used transparently with any number of new types
